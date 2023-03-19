@@ -31,7 +31,7 @@ rmse of 59.24 on scale inversed train data and 47.09 on scale inversed test data
 
 # Prediction Plots
 
-The following graph shows the actual and predicted stock prices of HDFC for the train and test data.
+The following graph shows the predicted stock prices over actual prices of HDFC for the train and test data.
 
 ![image](https://user-images.githubusercontent.com/79396917/226197151-3548d340-d76d-467c-bdde-8b940263998f.png)
 
@@ -40,7 +40,7 @@ The following graph shows the actual and predicted stock prices of HDFC for the 
  
 ![image](https://user-images.githubusercontent.com/79396917/226197164-5f67000a-c7c0-49f8-8d59-895ccc3e1963.png)
 
-
+orange - future predicted data for next 50 days
 
 
 
