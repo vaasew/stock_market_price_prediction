@@ -21,7 +21,9 @@ The input to the model is a sequence of previous 100 days closing stock prices, 
 The model was trained for 100 epochs with a batch size of 60, 
 
 
-and achieved - a root mean squared error of 0.0204 on the scaled train data and 0.0162 on scaled test data.
+and achieved - 
+
+a root mean squared error of 0.0204 on the scaled train data and 0.0162 on scaled test data.
 
 
 rmse of 59.24 on scale inversed train data and 47.09 on scale inversed test data.
@@ -31,11 +33,13 @@ rmse of 59.24 on scale inversed train data and 47.09 on scale inversed test data
 
 The following graph shows the actual and predicted stock prices of HDFC for the train and test data.
 
- ![image](https://user-images.githubusercontent.com/79396917/226196060-d09ddcb2-c05d-4224-8bec-cfee81dd4684.png)
- 
+![image](https://user-images.githubusercontent.com/79396917/226197151-3548d340-d76d-467c-bdde-8b940263998f.png)
+
+
  Prediction for next 50 days -
  
- ![image](https://user-images.githubusercontent.com/79396917/226196143-54a383d3-c814-4f2d-b731-0cc0e74f0149.png)
+![image](https://user-images.githubusercontent.com/79396917/226197164-5f67000a-c7c0-49f8-8d59-895ccc3e1963.png)
+
 
 
 
