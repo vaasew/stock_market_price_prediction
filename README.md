@@ -1,7 +1,7 @@
 # HDFC Stock Price Prediction using Stacked LSTM RNN
-This project aims to predict the stock prices of HDFC using Stacked LSTM RNN model.
+This project aims to predict the stock prices of HDFC using Stacked LSTM RNN + ANN model.
 # Dataset
-The dataset used in this project is obtained from Yahoo Finance. It consists of the historical stock prices of HDFC from January 2010 to April 2021.
+The dataset used in this project is obtained from Kaggle - https://www.kaggle.com/datasets/rohanrao/nifty50-stock-market-data. It consists of the historical stock prices of HDFC from 2000 to April 2021.
 # Dependencies
 The following libraries are required to run this project:
 
@@ -11,13 +11,36 @@ The following libraries are required to run this project:
     Scikit-Learn
     Keras
 # Model Architecture
-The Stacked LSTM RNN model used in this project consists of 3 LSTM layers with 128 units each, followed by a Dense layer with 1 unit.
-The input to the model is a sequence of 50 stock prices, and the output is the predicted stock price for the next day.
+The Stacked LSTM RNN +ANN model used in this project consists of 3 LSTM layers with 50 units each with one 0.2 dropout layer after the first LSTM, 
+followed by a Dense layer with 25 units with relu activation and 
+then a Dense layer with 1 unit.
+
+The input to the model is a sequence of previous 100 days closing stock prices, and the output is the predicted closing stock price for the next day.
+
 # Results
-The model was trained for 100 epochs, and achieved a mean squared error of 0.0016 on the test data. 
+The model was trained for 100 epochs with a batch size of 60, 
+
+
+and achieved - a root mean squared error of 0.0204 on the scaled train data and 0.0162 on scaled test data.
+
+
+rmse of 59.24 on scale inversed train data and 47.09 on scale inversed test data.
+
+
+# Prediction Plots
+
 The following graph shows the actual and predicted stock prices of HDFC for the train and test data.
-*image*
+
+ ![image](https://user-images.githubusercontent.com/79396917/226196060-d09ddcb2-c05d-4224-8bec-cfee81dd4684.png)
+ 
+ Prediction for next 50 days -
+ 
+ ![image](https://user-images.githubusercontent.com/79396917/226196143-54a383d3-c814-4f2d-b731-0cc0e74f0149.png)
+
+
+
+
 # Conclusion
-The Stacked LSTM RNN model was able to predict the stock prices of HDFC with a high degree of accuracy, as evidenced by the low mean squared error on the test data. However, it should be noted that stock price prediction is a complex and uncertain task, and this model should not be used for making 
+The Stacked LSTM RNN model was able to predict the stock prices of HDFC with a good degree of accuracy, as evidenced by the graphs and low root mean squared error on the test data. However, it should be noted that stock price prediction is a complex and uncertain task, and this model should not be used for making 
 investment decisions without further analysis and consultation with a financial advisor.
 
