@@ -49,7 +49,7 @@ The following graph shows the predicted stock prices over actual prices of HDFC 
 ![image](https://github.com/vaasew/stock_market_price_prediction/assets/79396917/60a50fbe-ea5f-42bf-bc06-5ce7bac3e571)
 
 
-orange - future predicted data for next 20 days
+red - future predicted data for next 20 days
 
 
 
