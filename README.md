@@ -16,7 +16,8 @@ followed by a Dense Output layer with 1 unit
 Optimizer= Adam
 Loss=mse
 Early stopping also utilised
-![image](https://user-images.githubusercontent.com/79396917/226197151-3548d340-d76d-467c-bdde-8b940263998f.png)
+<img width="416" alt="image" src="https://github.com/vaasew/stock_market_price_prediction/assets/79396917/a5f50a00-f0c0-40c5-b403-ed51e0b7ce08">
+
 
 
 The input to the model is a sequence of previous 100 days closing stock prices, and the output is the predicted closing stock price for the next day.
