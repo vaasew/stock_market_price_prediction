@@ -11,10 +11,14 @@ The following libraries are required to run this project:
     Scikit-Learn
     Keras
 # Model Architecture
-The Stacked LSTM RNN model used in this project consists of 2 LSTM layers with 20 units and 10 units each , 
+The Stacked LSTM RNN model used in this project consists of 2 LSTM layers with 20 units and 10 units each ,
+
 followed by a Dense Output layer with 1 unit
+
 Optimizer= Adam
+
 Loss=mse
+
 Early stopping also utilised
 <img width="416" alt="image" src="https://github.com/vaasew/stock_market_price_prediction/assets/79396917/a5f50a00-f0c0-40c5-b403-ed51e0b7ce08">
 
